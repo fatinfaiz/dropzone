@@ -26,3 +26,7 @@ Route::resource('listingtypes', 'ListingtypesController');
 Route::resource('brands', 'BrandsController');
 Route::resource('products', 'ProductsController');
 
+Route::get('products/areas/{state_id}','ProductsController@getStateAreas');
+Route::get('products/subcategories/{category_id}','ProductsController@getCategoriesSubcategories');
+
+Route::resource('products','ProductsController');

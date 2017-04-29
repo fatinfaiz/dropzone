@@ -78,6 +78,12 @@
             </div>
         </nav>
 
+        <!--paparkan success/error/warning/info message-->
+        <div class="container-fluid">
+        @include('flash::message')
+        </div>
+
+
         @yield('content')
     </div>
 
@@ -85,3 +91,5 @@
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
+@yield('script')
+
